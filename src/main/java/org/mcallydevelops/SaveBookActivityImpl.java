@@ -14,6 +14,7 @@ public class SaveBookActivityImpl implements SaveBookActivity{
 
     @Override
     public Book save(Book book) {
+//        throw new RuntimeException();
         return bookRepository.save(book);
     }
 }

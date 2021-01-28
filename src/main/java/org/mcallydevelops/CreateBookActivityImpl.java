@@ -9,5 +9,6 @@ public class CreateBookActivityImpl implements CreateBookActivity {
     @Override
     public Book createBook(String title) {
         return new Book(title);
+//        throw new RuntimeException();
     }
 }

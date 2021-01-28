@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "4bffe6ec-608d-4ed3-9fa3-035ba72e1b71",
+		"name": "temporal-example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/v1/asyncbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Bob\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/asyncbook",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"asyncbook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
