@@ -2,7 +2,6 @@ package org.mcallydevelops;
 
 import io.temporal.client.WorkflowClient;
 import io.temporal.client.WorkflowOptions;
-import org.mcallydevelops.repositories.BookRepository;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,12 +14,10 @@ public class AsyncBookController {
 
     private final WorkflowOptions options;
     private final WorkflowClient client;
-    private final BookRepository bookRepository;
 
-    public AsyncBookController(WorkflowOptions options, WorkflowClient workflowClient, BookRepository bookRepository) {
+    public AsyncBookController(WorkflowOptions options, WorkflowClient workflowClient) {
         this.options = options;
         this.client = workflowClient;
-        this.bookRepository = bookRepository;
     }
 
 
